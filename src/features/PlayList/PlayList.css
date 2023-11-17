@@ -1,0 +1,56 @@
+.playlist {
+  position: fixed;
+  width: 400px;
+  background-color: #252424;
+  overflow-y: auto;
+  height: 823px;
+  color: white;
+  z-index: -1;
+}
+
+.playlist-wrap {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: "pointer";
+}
+
+.playlist-wrap:hover {
+  background-color: #f2f2f2;
+}
+
+/* Chiều rộng của thanh cuộn */
+.playlist::-webkit-scrollbar {
+  width: 12px;
+}
+/* Màu của "thanh nhấp chuột" */
+.playlist::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+/* Màu nền của thanh cuộn */
+.playlist::-webkit-scrollbar-track {
+  background-color: #252424;
+}
+
+.playlist-index {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.playlist-img {
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+.playlist-img{
+    object-fit: cover;
+}
+
+.playlist-title {
+  flex-grow: 1;
+}
+
+.playlist-duration {
+  margin-left: 10px;
+}
